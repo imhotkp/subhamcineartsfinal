@@ -1,0 +1,523 @@
+/* Base Reset and Typography */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+/* Top Banner Styling */
+.top-banner {
+  background: linear-gradient(to right, #fff7e6, #fff);
+  padding: 30px 0;
+  border-bottom: 4px solid #d4af37;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.banner-left {
+  flex: 0 0 45%;
+}
+
+.pm-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.banner-right {
+  flex: 1;
+  color: #333;
+}
+
+.banner-right h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.signature {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+/* Hero Carousel */
+#heroCarousel {
+  width: 100%;
+  max-height: 90vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(2px);
+  max-width: 80%;
+  margin: auto;
+  bottom: 20%;
+}
+
+.carousel-caption h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #FFD700;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.carousel-caption .btn-warning {
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  margin-right: 0.5rem;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.3);
+}
+
+.carousel-caption .btn-outline-light {
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+}
+
+.carousel-caption .btn-warning:hover {
+  background-color: #e0b800;
+  color: #000;
+}
+
+.carousel-caption .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption {
+    bottom: 10%;
+    padding: 1rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.about-text h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.trusted-by {
+  font-style: italic;
+  color: #333;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background-color: #e66a00;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c85b00;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image, .about-text {
+    flex: 1 1 100%;
+  }
+
+  .about-text {
+    padding-top: 20px;
+  }
+}
+
+/* Clients Section */
+.clients-section {
+  background-color: #fff4e6;
+  border-top: 2px solid #d4af37;
+  padding: 60px 20px;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #B71C1C;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.client-logo {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.client-logo:hover {
+  filter: grayscale(0%);
+}
+
+.client-label {
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+
+/* Services Section */
+.home-services h2 {
+  font-weight: bold;
+  color: #b71c1c;
+}
+
+.service-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home-services .btn {
+  border-radius: 25px;
+  padding: 10px 24px;
+}
+/* Testimonials Section begins////////////// */
+.testimonials-section {
+  background-color: #fff4e6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  background: #f7f7f7;
+}
+
+.quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.author {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.coming-soon {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .testimonial-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+}
+
+/* Vision and Future Goals Section */
+/* Vision Section (Styled like Testimonials) */
+.vision-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.vision-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vision-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.vision-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.vision-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.vision-card:hover {
+  transform: translateY(-5px);
+  background: #f7f7f7;
+}
+
+.goal-icon {
+  font-size: 2.5rem;
+  color: #4e73df;
+  margin-bottom: 15px;
+}
+
+.goal-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vision-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .vision-card {
+    width: 100%;
+  }
+}
+
+/* how we work section begins */
+.how-we-work {
+  background-color: #fff4e6;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.step {
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step .icon {
+  font-size: 2.5rem;
+  color: #ff5e57;
+}
+
+.step h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #555;
+}
+/* story theme section begins */
+.story-themes {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.theme-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.theme-item:hover {
+  transform: translateY(-5px);
+}
+
+.theme-icon {
+  font-size: 2.5rem;
+  color: #ff5e57;
+  margin-bottom: 10px;
+}
+
+.theme-item h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.theme-item p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .theme-item {
+    margin-bottom: 20px;
+  }
+}
