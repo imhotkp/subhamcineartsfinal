@@ -1,11 +1,15 @@
-/* Base Reset and Typography */
+/* -----------------------------------
+Base Reset and Typography
+----------------------------------- */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #f9f9f9;
 }
 
-/* Top Banner Styling */
+/* -----------------------------------
+Top Banner Section
+----------------------------------- */
 .top-banner {
   background: linear-gradient(to right, #fff7e6, #fff);
   padding: 30px 0;
@@ -59,7 +63,23 @@ body {
   color: #222;
 }
 
-/* Hero Carousel */
+/* Mobile Responsive for Top Banner */
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner-left, .banner-right {
+    flex: 1 1 100%;
+  }
+  .banner-right {
+    margin-top: 20px;
+  }
+}
+
+/* -----------------------------------
+Hero Carousel Section
+----------------------------------- */
 #heroCarousel {
   width: 100%;
   max-height: 90vh;
@@ -68,7 +88,8 @@ body {
 
 .carousel-item img {
   width: 100%;
-  height: 90vh;
+  height: auto;
+  max-height: 90vh;
   object-fit: cover;
 }
 
@@ -80,6 +101,7 @@ body {
   max-width: 80%;
   margin: auto;
   bottom: 20%;
+  position: absolute;
 }
 
 .carousel-caption h1 {
@@ -125,7 +147,19 @@ body {
   color: #000;
 }
 
+/* Mobile Responsive for Hero Section */
 @media (max-width: 768px) {
+  .carousel-item img {
+    object-fit: contain;
+    height: auto;
+    max-height: 70vh;
+  }
+
+  .carousel-caption {
+    bottom: 10%;
+    padding: 1rem;
+  }
+
   .carousel-caption h1 {
     font-size: 1.8rem;
   }
@@ -134,18 +168,15 @@ body {
     font-size: 1rem;
   }
 
-  .carousel-caption {
-    bottom: 10%;
-    padding: 1rem;
-  }
-
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
   }
 }
 
-/* About Section */
+/* -----------------------------------
+About Section
+----------------------------------- */
 .about-section {
   padding: 60px 20px;
   background-color: #f8f9fa;
@@ -223,22 +254,23 @@ body {
   background-color: #c85b00;
 }
 
+/* Mobile Responsive for About Section */
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
     text-align: center;
   }
-
   .about-image, .about-text {
     flex: 1 1 100%;
   }
-
   .about-text {
     padding-top: 20px;
   }
 }
 
-/* Clients Section */
+/* -----------------------------------
+Clients Section
+----------------------------------- */
 .clients-section {
   background-color: #fff4e6;
   border-top: 2px solid #d4af37;
@@ -273,7 +305,9 @@ body {
   text-align: center;
 }
 
-/* Services Section */
+/* -----------------------------------
+Services Section
+----------------------------------- */
 .home-services h2 {
   font-weight: bold;
   color: #b71c1c;
@@ -293,7 +327,10 @@ body {
   border-radius: 25px;
   padding: 10px 24px;
 }
-/* Testimonials Section begins////////////// */
+
+/* -----------------------------------
+Testimonials Section
+----------------------------------- */
 .testimonials-section {
   background-color: #fff4e6;
   padding: 60px 20px;
@@ -305,18 +342,10 @@ body {
   margin: 0 auto;
 }
 
-.section-heading {
-  font-size: 2.2rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #333;
-}
-
 .section-description {
   font-size: 1.2rem;
   color: #555;
   margin-bottom: 40px;
-  
 }
 
 .testimonial-cards {
@@ -341,13 +370,6 @@ body {
   background: #f7f7f7;
 }
 
-.quote {
-  font-size: 1.1rem;
-  font-style: italic;
-  color: #444;
-  margin-bottom: 15px;
-}
-
 .author {
   font-size: 1rem;
   font-weight: 500;
@@ -361,20 +383,20 @@ body {
   font-style: italic;
 }
 
-/* Responsive Layout */
+/* Mobile Responsive for Testimonials */
 @media (max-width: 768px) {
   .testimonial-cards {
     flex-direction: column;
     gap: 20px;
   }
-
   .testimonial-card {
     width: 100%;
   }
 }
 
-/* Vision and Future Goals Section */
-/* Vision Section (Styled like Testimonials) */
+/* -----------------------------------
+Vision Section
+----------------------------------- */
 .vision-section {
   background-color: #f9f9f9;
   padding: 60px 20px;
@@ -414,39 +436,22 @@ body {
   background: #f7f7f7;
 }
 
-.goal-icon {
-  font-size: 2.5rem;
-  color: #4e73df;
-  margin-bottom: 15px;
-}
-
-.goal-text {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #333;
-}
-
-/* Responsive */
+/* Mobile Responsive for Vision */
 @media (max-width: 768px) {
   .vision-cards {
     flex-direction: column;
     gap: 20px;
   }
-
   .vision-card {
     width: 100%;
   }
 }
 
-/* how we work section begins */
+/* -----------------------------------
+How We Work Section
+----------------------------------- */
 .how-we-work {
   background-color: #fff4e6;
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #222;
 }
 
 .step {
@@ -472,15 +477,12 @@ body {
   font-size: 0.95rem;
   color: #555;
 }
-/* story theme section begins */
+
+/* -----------------------------------
+Story Themes Section
+----------------------------------- */
 .story-themes {
   background-color: #f9f9f9;
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
 }
 
 .theme-item {
@@ -515,7 +517,7 @@ body {
   color: #555;
 }
 
-/* Responsive Layout */
+/* Mobile Responsive for Story Themes */
 @media (max-width: 768px) {
   .theme-item {
     margin-bottom: 20px;

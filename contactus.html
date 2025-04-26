@@ -21,26 +21,19 @@
             <a class="navbar-brand" style="color: #FFF;" href="#">Shubham Cine Arts</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" style="border-color: white;">
                 <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'><path stroke=\'white\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/></svg>');"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" style="color: #FFF;" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" style="color: #FFF;" aria-current="page" href="work.html">Our Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" style="color: #FFF;" aria-current="page" href="services.html">Services</a>
-                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" style="color: #FFF;" aria-current="page" href="contactus.html">Contact Us</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" style="color: #FFF;" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color: #FFF;" href="work.html">Our Works</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color: #FFF;" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" style="color: #FFF;" href="contactus.html">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Navbar ends -->
+
     <!-- Title Section -->
     <section class="container py-5 text-center">
         <h1 class="display-5 fw-bold">Contact Subham Cine Arts</h1>
@@ -56,23 +49,23 @@
                 <form id="contact-form">
                     <div class="mb-3">
                         <label class="form-label">Full Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" required>
+                        <input type="text" class="form-control" id="fullname" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Email Address <span class="text-danger">*</span></label>
-                        <input type="email" class="form-control" required>
+                        <input type="email" class="form-control" id="cemail" required>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label">Phone Number (optional)</label>
-                        <input type="tel" class="form-control">
+                        <label class="form-label">Phone Number <span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control" id="cphone" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Subject</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="csubject" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Message</label>
-                        <textarea class="form-control" rows="4" placeholder="How can we help you?"></textarea>
+                        <textarea class="form-control" id="cmessage" rows="4" placeholder="How can we help you?"></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary px-4">Send Message</button>
                     <div class="alert alert-success mt-3 d-none" id="success-message">
@@ -102,76 +95,98 @@
             </div>
         </div>
     </section>
-    <!-- Footer section begins  -->
+
+    <!-- Footer section begins -->
     <footer>
-        <!-- Footer Section -->
-        <div
-            style="background-color: #0e1d34; color: #ffffff; padding: 10px 5px; text-align: center; font-family: Arial, sans-serif;">
-
-            <!-- Section Title -->
-            <div style="font-size: 1.2rem; margin-bottom: 8px;">
-                Ready to Make an Impact?
-            </div>
-
-            <!-- Call to Action Button -->
-            <a href="#contact"
-                style="background-color: #ff6f61; color: #fff; font-size: 0.9rem; padding: 8px 16px; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block;">
+        <div style="background-color: #0e1d34; color: #ffffff; padding: 10px 5px; text-align: center; font-family: Arial, sans-serif;">
+            <div style="font-size: 1.2rem; margin-bottom: 8px;">Ready to Make an Impact?</div>
+            <a href="#contact" style="background-color: #ff6f61; color: #fff; font-size: 0.9rem; padding: 8px 16px; border-radius: 5px; text-decoration: none; display: inline-block;">
                 Let's Discuss Your Film
             </a>
-
-            <!-- Social Icons -->
             <div style="margin-top: 10px;">
-                <a href="https://www.youtube.com" target="_blank" style="margin: 0 8px; text-decoration: none;">
-                    <img src="https://cdn-icons-png.flaticon.com/24/1384/1384060.png" alt="YouTube"
-                        style="vertical-align: middle; border: none;">
-                </a>
-                <a href="https://www.facebook.com" target="_blank" style="margin: 0 8px; text-decoration: none;">
-                    <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"
-                        style="vertical-align: middle; border: none;">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" style="margin: 0 8px; text-decoration: none;">
-                    <img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"
-                        style="vertical-align: middle; border: none;">
-                </a>
-                <a href="https://www.twitter.com" target="_blank" style="margin: 0 8px; text-decoration: none;">
-                    <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"
-                        style="vertical-align: middle; border: none;">
-                </a>
+                <a href="https://www.youtube.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384060.png" alt="YouTube"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384063.png" alt="Instagram"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" alt="Twitter"></a>
             </div>
-
-            <!-- Quick Links -->
             <div style="margin-top: 15px; font-size: 0.8rem;">
-                <a href="#about" style="margin: 0 6px; color: #ffffff; text-decoration: none;">About</a> |
-                <a href="#films" style="margin: 0 6px; color: #ffffff; text-decoration: none;">Films</a> |
-                <a href="#services" style="margin: 0 6px; color: #ffffff; text-decoration: none;">Services</a> |
-                <a href="#contact" style="margin: 0 6px; color: #ffffff; text-decoration: none;">Contact</a>
+                <a href="#about" style="color: #ffffff;">About</a> | 
+                <a href="#films" style="color: #ffffff;">Films</a> | 
+                <a href="#services" style="color: #ffffff;">Services</a> | 
+                <a href="#contact" style="color: #ffffff;">Contact</a>
             </div>
-
-            <!-- Contact Info -->
             <div style="margin-top: 8px; font-size: 0.8rem; color: #ccc;">
                 Email: info@subhamcinearts.com | Phone: +123456789
             </div>
-
-            <!-- Designer Credit -->
             <div style="margin-top: 6px; font-size: 0.75rem; color: #aaa;">
-                Designed by <a href="https://www.linkedin.com/in/username" target="_blank"
-                    style="color: #ff6f61; text-decoration: none;">username</a>
+                Designed by <a href="https://www.linkedin.com/in/username" target="_blank" style="color: #ff6f61;">username</a>
             </div>
-
-            <!-- Rights Note -->
             <div style="margin-top: 4px; font-size: 0.7rem; color: #888;">
                 &copy; 2025 Subham Cine Arts. All rights reserved.
             </div>
-
         </div>
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- Bootstrap Bundle with Popper -->
+    <!-- Scripts -->
     <script src="js/homepage.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+    <!-- Firebase Script -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js";
+        import { getDatabase, ref, set, push } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-database.js";
+
+        window.addEventListener('DOMContentLoaded', function() {
+            const firebaseConfig = {
+                apiKey: "AIzaSyAybdhkB6e1wgOzlGgNvZgKGnKevwTV5FI",
+                authDomain: "shubhamcinearts-c9bbc.firebaseapp.com",
+                projectId: "shubhamcinearts-c9bbc",
+                storageBucket: "shubhamcinearts-c9bbc.appspot.com",
+                messagingSenderId: "531425349862",
+                appId: "1:531425349862:web:fea83958335e078862eb27",
+                measurementId: "G-7WK5ZS8MDW"
+            };
+
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+            const db = getDatabase();
+
+            const name = document.getElementById("fullname");
+            const email = document.getElementById("cemail");
+            const phone = document.getElementById("cphone");
+            const subject = document.getElementById("csubject");
+            const message = document.getElementById("cmessage");
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form reload
+
+                const customerListRef = ref(db, "Customers");
+                const newCustomerRef = push(customerListRef);
+
+                const customerData = {
+                    customer_name: name.value,
+                    customer_email: email.value,
+                    customer_phone: phone.value,
+                    customer_subject: subject.value
+                };
+
+                set(newCustomerRef, customerData)
+                    .then(() => {
+                        alert("Data Saved Successfully!");
+                        name.value = "";
+                        email.value = "";
+                        phone.value = "";
+                        subject.value = "";
+                        message.value="";
+                    })
+                    .catch((error) => {
+                        alert("Unsuccessful, error: " + error);
+                    });
+            });
+        });
+    </script>
 </body>
 
 </html>
